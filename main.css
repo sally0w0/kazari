@@ -94,18 +94,18 @@ h3 {
     display: inline-block;
 }
 
-.thick {
+.thick-out {
     position: relative;
-    border: 2px solid #ca4;
-    padding: 1em;
+    border: 5px solid #ca4;
+    padding: 0.5em;
     color: #ca4;
     text-align: center;
 }
 
-.thick:before,
-.thick:after,
-.circle:before,
-.circle:after {
+.thick-out:before,
+.thick-out:after,
+.circle-out:before,
+.circle-out:after {
     position: absolute;
     display: block;
     border-radius: 50%;
@@ -113,24 +113,66 @@ h3 {
     height: 20px;
     content: "";
     background-color: #fff ;
+    border: 5px solid #ca4;
+}
+.thick-out:before {
+    top: -15px;
+    left: -15px;
+}
+.thick-out:after {
+    top: -15px;
+    right: -15px;
+}
+.circle-out:before {
+    right: -15px;
+    bottom: -15px;
+}
+.circle-out:after {
+    left: -15px;
+    bottom: -15px;
+}
+
+
+
+.thick-in {
+  position: relative;
+  border: 2px solid #ca4;
+  padding: 1em;
+  color: #ca4;
+  text-align: center;
+}
+
+.thick-in:before,
+.thick-in:after,
+.circle-in:before,
+.circle-in:after {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background-color: #fff ;
     border: 2px solid #ca4;
 }
-.thick:before {
-    top: -12px;
-    left: -12px;
+.thick-in:before {
+    top: -10px;
+    left: -10px;
 }
-.thick:after {
-    top: -12px;
-    right: -12px;
+.thick-in:after {
+    top: -10px;
+    right: -10px;
 }
-.circle:before {
-    right: -12px;
-    bottom: -12px;
+.circle-in:before {
+    right: -10px;
+    bottom: -10px;
 }
-.circle:after {
-    left: -12px;
-    bottom: -12px;
+.circle-in:after {
+    left: -10px;
+    bottom: -10px;
 }
+
+
 
 .over {
     overflow: hidden;
